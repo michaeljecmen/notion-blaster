@@ -5,6 +5,11 @@ use this utility to send messages on a regular cadence using contents pulled fro
 I use it to text myself daily journaling prompts -- I maintain a notion page on my phone of journaling prompts, and every day I get a text with a new prompt. helps me journal
 
 # setup
+### format your notion page correctly
+<img width="787" alt="image" src="https://github.com/user-attachments/assets/47814c85-c4fb-47f1-97f8-e98bd48495d0">
+
+this image gives a pretty good explanation, but I only wrote this script to pull top-level bulleted list items from a notion page. this is what I want personally, because I also write other notes (responses, links, etc) in my journaling prompts page which I don't want included in my text blasts
+
 ### get a notion api key
 * go to https://www.notion.so/profile/integrations
 * make a new integration
