@@ -1,3 +1,4 @@
+import random
 import json
 from pprint import pprint
 from notion_client import Client
@@ -47,7 +48,9 @@ def main():
             blocks.append(text)
 
     print(f"found {len(blocks)} blocks")
-    pprint(blocks)
+    # pprint(blocks)
+    chosen_block = random.choice(blocks)
+    print(f"chosen block: {chosen_block}")
 
 if __name__ == "__main__":
     main()
