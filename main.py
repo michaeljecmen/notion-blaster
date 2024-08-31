@@ -20,13 +20,34 @@ def main():
     page_id = page['id']
     print(f"page found with title \"{found_title}\" and id {page_id}")
 
-    # resp = notion_client.pages.retrieve(page_id=page_id)
-    # pprint(resp)
+    # concat all resulting blocks from paginated responses
+    blocks = []
 
-    resp = notion_client.blocks.retrieve(block_id=page_id)
-    pprint(resp)
+    # handle pagination with has_more on this response object
+    next_cursor = None
+    has_more = True
+    while has_more:
+        resp = notion_client.blocks.children.list(block_id=page_id, start_cursor=next_cursor)
+        
+        has_more = resp['has_more']
+        next_cursor = resp['next_cursor']
 
+        results = resp['results']
 
+        # need to get different types of blocks differently
+        for r in results:
+            type = r['type']
+            if type == 'bulleted_list_item':
+                text = r['bulleted_list_item']['rich_text'][0]['plain_text']
+            else:
+                print(f"found block type {type}, dropping it")
+                continue
+            
+            text = text.strip()
+            blocks.append(text)
+
+    print(f"found {len(blocks)} blocks")
+    pprint(blocks)
 
 if __name__ == "__main__":
     main()
