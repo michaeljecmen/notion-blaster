@@ -14,9 +14,21 @@ I use it to text myself daily journaling prompts -- I maintain a notion page on 
 * give the integration access to the page you want it to read from:
 <img width="1006" alt="image" src="https://github.com/user-attachments/assets/c51452b2-67a4-4fa6-8f4d-9b8f1f166875">
 
-
+### set up your config
 ```
 cp example_config.json config.json
 ```
 
 then fill out the API key in `config.json` with the secret you copied from the notion site
+and fill out the `page_title` value with the title of the page you want to pull from.
+make sure you actually granted your API key access to this page using the steps above
+
+### install dependencies
+```
+pip install -r requirements.txt
+```
+
+# running the script
+```
+python3 main.py
+```
