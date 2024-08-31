@@ -1,3 +1,4 @@
 {
-    "notion_api_key": "YOUR_NOTION_API_KEY"
+    "notion_api_key": "YOUR_NOTION_API_KEY",
+    "page_title": "YOUR_PAGE_TITLE"
 }
