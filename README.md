@@ -9,6 +9,9 @@ I use it to text myself daily journaling prompts -- I maintain a notion page on 
 * go to https://www.notion.so/profile/integrations
 * make a new integration
 * copy the internal integration secret
+* give the integration access to the page you want it to read from:
+<img width="1006" alt="image" src="https://github.com/user-attachments/assets/c51452b2-67a4-4fa6-8f4d-9b8f1f166875">
+
 
 ```
 cp example_config.json config.json
