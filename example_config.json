@@ -1,4 +1,7 @@
 {
     "notion_api_key": "YOUR_NOTION_API_KEY",
-    "page_title": "YOUR_PAGE_TITLE"
+    "page_title": "YOUR_PAGE_TITLE",
+    "sender_email": "YOUR_EMAIL_ADDRESS",
+    "sender_password": "YOUR_EMAIL_PASSWORD",
+    "receiver_email": "RECEIVER_EMAIL_ADDRESS"
 }
