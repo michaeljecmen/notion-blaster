@@ -22,6 +22,8 @@ this image gives a pretty good explanation, but I only wrote this script to pull
 ### set up a sender email address
 you'll need to follow [this tutorial](https://wpmailsmtp.com/docs/how-to-set-up-the-other-smtp-mailer-in-wp-mail-smtp/#app-passwords) to generate an app password for this program. for now this program only supports sending from gmail addresses (but email can be sent to any address)
 
+![image](https://github.com/user-attachments/assets/545745ad-2b1b-4913-a7f0-3fcefcba8933)
+
 when you've generated the app password, use that password (it should be a series of 16 characters) as the ```sender_password``` value in ```config.json``` instead of your actual email password you use to log in. 
 
 this is necessary due to increased gmail security as of mid 2022.
