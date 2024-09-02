@@ -19,6 +19,13 @@ this image gives a pretty good explanation, but I only wrote this script to pull
 * give the integration access to the page you want it to read from:
 <img width="1006" alt="image" src="https://github.com/user-attachments/assets/c51452b2-67a4-4fa6-8f4d-9b8f1f166875">
 
+### set up a sender email address
+you'll need to follow [this tutorial](https://wpmailsmtp.com/docs/how-to-set-up-the-other-smtp-mailer-in-wp-mail-smtp/#app-passwords) to generate an app password for this program. for now this program only supports sending from gmail addresses (but email can be sent to any address)
+
+when you've generated the app password, use that password (it should be a series of 16 characters) as the ```sender_password``` value in ```config.json``` instead of your actual email password you use to log in. 
+
+this is necessary due to increased gmail security as of mid 2022.
+
 ### set up your config
 ```
 cp example_config.json config.json
@@ -27,6 +34,7 @@ cp example_config.json config.json
 then fill out the API key in `config.json` with the secret you copied from the notion site
 and fill out the `page_title` value with the title of the page you want to pull from.
 make sure you actually granted your API key access to this page using the steps above
+
 
 ### install dependencies
 ```
