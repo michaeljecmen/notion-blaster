@@ -2,7 +2,10 @@
 
 use this utility to send messages on a regular cadence using contents pulled from your notion pages
 
-I use it to text myself daily journaling prompts -- I maintain a notion page on my phone of journaling prompts, and every day I get a text with a new prompt. helps me journal
+I use it to email myself daily journaling prompts -- I maintain a notion page on my phone of journaling prompts, and every day I get an email notification with a new prompt. helps me journal with more purpose, and I was already maintaining a page of journaling prompts
+
+if you've got email notifications off by default, make a new email address just for receiving these emails, then use a different app for that email and that email address only
+... which you can then let pass through your email filters
 
 # setup
 ### format your notion page correctly
